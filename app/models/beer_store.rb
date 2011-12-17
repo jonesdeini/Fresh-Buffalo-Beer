@@ -21,7 +21,6 @@ private
     Twitter.user_timeline(twitter_name)[0...limit]
   end
   def self.stores_hash
-    # @@beer_stores ||= YAML.load_file("#{Rails.root}/config/beer_stores.yml")
-    YAML.load_file("#{Rails.root}/config/beer_stores.yml")
+    @@beer_stores ||= YAML.load_file("#{Rails.root}/config/beer_stores.yml")
   end
 end

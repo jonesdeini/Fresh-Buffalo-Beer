@@ -1,5 +1,32 @@
 Consumers Beverages:
+  1280 Abbott Rd:
+    twitter: OnTapAbbott
+    taps_count: 12
   444 Cayuga Rd:
     twitter: OnTapCayuga
     taps_count: 12
-  
+  2440 Clinton St:
+    twitter: OnTapClinton
+    taps_count: 12
+  1825 Como Park Blvd:
+    twitter: OnTapComo
+    taps_count: 12
+  2644 Elmwood Ave:
+    twitter: OnTapElmwood
+    taps_count: 12
+  7105 Niagara Falls Blvd:
+    twitter: OnTapNiagara
+    taps_count: 12
+  3025 Sheridan Dr:
+    twitter: OnTapSheridan
+    taps_count: 16
+  5869 South Transit Rd:
+    twitter: OnTapLockport
+    taps_count: 12
+  8580 Transit Rd:
+    twitter: OnTapTransit
+    taps_count: 12
+  6161 West Quaker St:
+    twitter: OnTapOrchard
+    taps_count: 16
+

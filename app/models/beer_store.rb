@@ -13,7 +13,7 @@ private
     Hash.new.tap do |hash|
       most_recent_tweets(twitter_name, taps_count).map do |tweet|
         beer_name = tweet.text.sub(/(.)+Just Tapped\s/, '')
-        hash[beer_name] = tweet.created_at
+        hash[tweet.created_at] = beer_name
       end
     end
   end

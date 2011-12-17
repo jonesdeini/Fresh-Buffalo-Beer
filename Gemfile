@@ -18,6 +18,7 @@ end
 
 gem 'jquery-rails'
 gem "twitter", "~> 2.0.2"
+gem "redis", "~> 2.2.2"
 
 group :test do
   # Pretty printed test output

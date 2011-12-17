@@ -27,4 +27,6 @@ ConsumersFreshestBeers::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  ENV["REDISTOGO_URL"] = 'redis://127.0.0.1:6379'
 end

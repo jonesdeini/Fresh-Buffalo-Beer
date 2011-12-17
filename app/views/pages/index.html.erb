@@ -1,0 +1,11 @@
+<% @beer_hash.each do |store, beers| %>
+  <h3><%= "Consumers Beverages, #{store}" %></h3>
+  <ul>
+    <% beers.each do |beer_name, tapped_date| %>
+      <%= beer_tag(beer_name, tapped_date) %>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= Twitter.rate_limit_status.remaining_hits.to_s + " Twitter API request(s) remaining this hour" %>
+

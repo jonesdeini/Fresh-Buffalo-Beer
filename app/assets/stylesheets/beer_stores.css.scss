@@ -1,0 +1,23 @@
+ul {
+  width: 50%;
+}
+li {
+  border: 3px solid;
+  padding: 5px;
+  margin: 5px;
+}
+.freshest {
+  border-color: green;
+}
+.fresher {
+  border-color: blue;
+}
+.fresh {
+  border-color: yellow;
+}
+.less-fresh {
+  border-color: orange;
+}
+.stale {
+  border-color: red;
+}

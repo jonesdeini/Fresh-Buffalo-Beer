@@ -18,7 +18,17 @@ private
     end
   end
   def self.most_recent_tweets(twitter_name, limit)
-    Twitter.user_timeline(twitter_name)[0...limit]
+    tweets = if REDIS.exists twitter_name
+      YAML.load(REDIS.get(twitter_name))
+    else
+      fetch_and_cache_tweets
+    end
+    tweets[0...limit]
+  end
+  def self.fetch_and_cache_tweets
+    temp = Twitter.user_timeline(twitter_name)[0...16]
+    REDIS.set twitter_name, YAML.dump(temp)
+    temp
   end
   def self.stores_hash
     @@beer_stores ||= YAML.load_file("#{Rails.root}/config/beer_stores.yml")
